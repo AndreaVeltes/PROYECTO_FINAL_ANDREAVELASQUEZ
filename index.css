@@ -6,7 +6,9 @@
     padding:0;
     box-sizing:border-box;
 }
-
+html{
+    scroll-behavior: smooth; 
+}
 body {
     font-family: quicksand;
 }
@@ -29,8 +31,8 @@ header {
     width: 100%;
     height: 600px;
     background: #bc4e9c;  /* fallback for old browsers */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.432), hsla(317, 45%, 52%, 0.404)), URL(../portada3.jpg);   /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.432), hsla(317, 45%, 52%, 0.404)), URL(../portada3.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.432), hsla(317, 45%, 52%, 0.404)), URL(/Recursos/portada3.jpg);   /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.432), hsla(317, 45%, 52%, 0.404)), URL(/Recursos/portada3.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -217,35 +219,59 @@ header .textos-header{
     text-align: justify;
 }
 /*footer*/
-.contenedor-footer {
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
-}
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-.content-foo{
-    text-align: center;
-}
-.content-foo h4{
+
+footer{
+    background: hsla(0, 1%, 62%, 0.452);
     color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;    
+    font-size: 20%;
+    padding: 30px 0;
 }
-.content-foo p{
-    color: #ccc;   
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+.input{
+    background: rgba(196, 186, 196, 0.788);
+    border: 0;
+    color: #fff;+
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+.input::placeholder{
+    color: #17061d; 
+    font-family: quicksand;
+    font-size: 20px;
+    font-weight: 300;
+}
+input[type="text"],
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: #bc4e9c;
+    background: #8e79a0ab;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
 .titulo-final{
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
-    color: 9e9797;
+    color: black;
 }
