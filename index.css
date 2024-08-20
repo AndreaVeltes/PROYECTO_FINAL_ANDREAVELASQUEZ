@@ -37,19 +37,48 @@ header {
     background-attachment: fixed;
     position: relative;
 }
-nav{   
-    text-align: right;
-    padding: 30px 50px 0 0;
+.nav{   
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 25px;
+    transition: all 0.5s ease;
 }
-nav > a{
-    color:#fff;
-    font-weight: 500;
-    font-size: 20px;
+.nav.active{
+    background: #fff;
+    padding: 8px;
+}
+.nav.active a{
+    color: #642a73;
+}
+.nav.active a:hover{
+    background: #000;
+    color: #fff;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: #fff;
     text-decoration: none;
-    margin-right:  30px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-size: 20px;
 }
-nav > a:hover {
-    text-decoration: underline;
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+.scroll{
+    height: 100px;
 }
 header .textos-header{
     display: flex;
@@ -234,7 +263,7 @@ footer{
 .input{
     background: rgba(196, 186, 196, 0.788);
     border: 0;
-    color: #fff;+
+    color: #fff;
     outline: none;
     border: 1px solid #fff;
     padding: 20px 10px;
